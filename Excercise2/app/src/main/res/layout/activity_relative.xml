@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".RelativeActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/headline"
+        android:textColor="@color/gray"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView"
+
+        android:src="@drawable/image"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="292dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="28dp"
+        android:layout_below="@id/imageView"
+        android:layout_centerHorizontal="true"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/editTextText"
+            android:layout_width="300dp"
+            android:layout_height="66dp"
+
+            android:background="@drawable/edittext_border"
+            android:ems="10"
+            android:hint="Username"
+            android:inputType="text"
+            android:paddingStart="15dp"
+            android:text=""
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintHorizontal_bias="0.445"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="83dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="-10dp"
+
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text=""
+            android:textColor="@color/purple"
+            tools:layout_editor_absoluteX="52dp"
+            tools:layout_editor_absoluteY="244dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative2"
+        android:layout_width="321dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="20sp"
+        android:orientation="vertical"
+        android:layout_below="@id/relative1"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relative1">
+
+        <EditText
+            android:id="@+id/editTextText2"
+            android:layout_width="300dp"
+            android:layout_height="66dp"
+            android:background="@drawable/edittext_border"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="text"
+            android:padding="20dp"
+            android:paddingStart="15dp"
+            android:text=""
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.44"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.049" />
+
+        <TextView
+            android:id="@+id/password"
+            android:layout_width="83dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="-10dp"
+
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text=""
+            android:textColor="@color/purple"
+            tools:layout_editor_absoluteX="52dp"
+            tools:layout_editor_absoluteY="244dp" />
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/msg1"
+        android:textColor="@color/purple"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textView5"
+         />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="136dp"
+        android:text="@string/msg2"
+        android:textColor="@color/gray"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textView2"
+        />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="104dp"
+        android:text="@string/msg3"
+        android:textColor="@color/purple"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textView3"
+         />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="302dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/purple"
+        android:gravity="center"
+        android:text="LOGIN"
+        android:textColor="@color/blue"
+        android:textSize="18dp"
+        android:textStyle="bold"
+       android:layout_centerHorizontal="true"
+        android:layout_below="@id/relative2"
+         />
+
+
+</RelativeLayout>

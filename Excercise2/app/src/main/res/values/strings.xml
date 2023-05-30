@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Excercise2</string>
+    <string name="headline">Super Cars</string>
+    <string name="msg1">Forgot my Password</string>
+    <string name="msg2">Don\'t have already an Account?</string>
+    <string name="msg3">Signup here</string>
+</resources>
