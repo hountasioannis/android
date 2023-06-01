@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:id="@+id/username_textview"
+        android:layout_width="388dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="10dp"
+        android:hint="Enter username" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:id="@+id/email_textview"
+        android:layout_width="389dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:hint="Enter email" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:id="@+id/password_textview"
+        android:layout_width="388dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="10dp"
+        android:inputType="textPassword"
+        android:hint="Enter password" />
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_marginTop="50dp"/>
+
+</LinearLayout>
